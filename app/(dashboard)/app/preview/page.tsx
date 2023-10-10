@@ -165,7 +165,7 @@ export default function App() {
     let headersList = {
       Accept: "*/*",
       // "User-Agent": "Thunder Client (https://www.thunderclient.com)",
-      Authorization: `Basic ${process.env.AUTHENTICATION}`,
+      Authorization: "Basic MTViZjdjMjVkMGY0NTIwODg2ZmIyZjNmMDAzMWEyNGVmMWUyNGEyNzQ5ZjdiZGUxMDFmYTU0NTQ3YzJjNTU0ZDo=",
       "Content-Type": "application/json",
     };
 
