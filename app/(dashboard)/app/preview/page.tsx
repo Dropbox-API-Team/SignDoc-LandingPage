@@ -60,7 +60,7 @@ export default function App() {
       PSPDFKit = await import("pspdfkit");
       await PSPDFKit.load({
         container,
-        document: document.file_url,
+        document: document?.file_url,
         // document: "/INV.pdf",
         baseUrl: `${window.location.protocol}//${window.location.host}/`,
       });
@@ -174,9 +174,7 @@ export default function App() {
       subject: subject,
       message: message,
       signers: emailPairs,
-      file_urls: [
-        document.file_url,
-      ],
+      file_urls: [document.file_url],
       metadata: {
         custom_id: 1234,
         custom_text: document.name,
@@ -337,16 +335,14 @@ export default function App() {
                             component="div"
                             className="error"
                           />
-                          <Button
-                            
-                            variant={"ghost"}
-                            onClick={(e) => {
-                              e.preventDefault;
+                          <div
+                          className="add-btn"
+                            onClick={() => {
                               formikProps.submitForm();
                             }}
                           >
                             Add
-                          </Button>
+                          </div>
                         </Form>
                       )}
                     </Formik>
