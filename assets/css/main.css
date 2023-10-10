@@ -422,6 +422,10 @@
   @apply flex flex-col items-start gap-4;
 }
 
+.add-btn{
+  @apply w-full text-center py-2 rounded-md m-auto text-white bg-blue-500;
+}
+
 .remove-button {
   @apply text-xl text-blue-600 font-medium ml-3;
 }
